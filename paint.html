@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<style type="text/css">
+	/*canvas: let you draw picture*/
+		canvas{
+			border:3px solid #153f54;
+		}
+	</style>
+</head>
+<body>
+	<center>
+	<h1> Let's Paint!!</h1>
+	<br>
+	<button id="new" class="btn btn-action"><i class="far fa-file"></i></button> 
+	<!-- here we got small icons through this website: https://fontawesome.com/icons/paint-brush?style=solid -->
+	<button id="eraseBtn" class="btn btn-action" ><i class="fas fa-eraser"></i></button>
+	<button id="blueBtn" class="btn btn-action" style="background-color: blue;"><i class="fas fa-paint-brush"></i></button>
+	<button id="redBtn" class="btn btn-action" style="background-color: red;"><i class="fas fa-paint-brush"></i></button>
+	<button id="pinkBtn" class="btn btn-action" style="background-color: #c617af;"><i class="fas fa-paint-brush"></i></button>
+	<button id="greenBtn" class="btn btn-action" style="background-color: #46ed04"><i class="fas fa-paint-brush"></i></button>
+	<button id="newBtn" class="btn btn-action" style="background-color: #00ccff"><i class="fas fa-paint-brush"></i></button>
+	<button id="brownBtn" class="btn btn-action" style="background-color: #663300"><i class="fas fa-paint-brush"></i></button>
+	<br>
+	<br>
+	<input id = "slider" type="range" min = "1" max="20" step="1"> <!-- seekbar --> <!-- step: how much you want value to be change everytime you chnge -->
+	<br>
+	<br>
+<canvas id="main" width="1200" height="400"></canvas>
+<script src="paint.js"></script>
+</center>
+</body>
+</html>
